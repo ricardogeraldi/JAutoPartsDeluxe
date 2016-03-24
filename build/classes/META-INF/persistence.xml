@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="JAutoPartsDeluxe" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>entidades.Cidade</class>
+    <class>entidades.Cliente</class>
+    <class>entidades.Empresa</class>
+    <class>entidades.Entrada</class>
+    <class>entidades.Estado</class>
+    <class>entidades.Fornecedor</class>
+    <class>entidades.Funcionario</class>
+    <class>entidades.Grupo</class>
+    <class>entidades.ItemEntrada</class>
+    <class>entidades.ItemSaida</class>
+    <class>entidades.Prateleira</class>
+    <class>entidades.Produto</class>
+    <class>entidades.Saida</class>
+    <class>entidades.SubGrupo</class>
+    <class>entidades.Veiculo</class>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value=""/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/autopartsdeluxe"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+    <!--<properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.connection.username" value="SA"/>
+      <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>
+      <property name="hibernate.connection.password" value=""/>
+      <property name="hibernate.connection.url" value="jdbc:hsqldb:hsql://localhost/exemplo"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>-->
+  </persistence-unit>
+</persistence>
